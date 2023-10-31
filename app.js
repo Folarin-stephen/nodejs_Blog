@@ -21,7 +21,7 @@ app.use(session({
     secret: 'Keyboard cat',
     resave: false,
     saveUninitialized: true,
-    mongoUrl: process.env.MONGODB_URL
+    mongoUri: process.env.MONGODB_URL
 }))
 
 app.use(express.static('public'));
